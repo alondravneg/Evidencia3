@@ -1,0 +1,149 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+@font-face {
+    font-family: 'mogilteregular';
+    src: url("fonts/mogilte-webfont.woff2") format("woff2"),
+         url("fonts/mogilte-webfont.woff") format("woff"),
+         url("fonts/Mogilte.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: white !important;
+  border-color: black !important;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: -80px;
+}
+
+.jumbotron-heading {
+  font-weight: 700;
+  font-family: 'mogilteregular' !important;
+  color: black !important;
+}
+
+.jumbotron .container {
+  max-width: 60rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.botoncito
+{
+  font-family: Courier New;
+  background-color: #F48668 !important;
+  border-color: #DD614A !important;
+}
+
+.botoncito2
+{
+  font-family: Courier New;
+  background-color: #C5C392 !important;
+  border-color: #8CB369 !important;
+}
+
+.bg-navbar{
+  background-color: #C0BE87;
+}
+
+.bg-header {
+  background-color: #C5C392;
+}
+
+.bg-footer{
+  font-family: Courier New;
+  font-size: 12px;
+  background-color: #DDB595 !important;
+  color: #F1FFE7;;
+}
+
+.link-color{
+  color: #DD614A !important;
+}
+
+.font-spacing{
+  letter-spacing: -2.5px;
+  font-family: Courier New, sans-serif !important; 
+
+}
+
+.font-text{
+  font-family: Courier New, sans-serif !important; 
+  font-size: 12px;
+}
+
+.mogilte{
+  font-family: 'mogilteregular' !important; 
+}
+
+.navbar-font{
+  font-family: mogilteregular, sans-serif !important; 
+  font-size: 16px;
+  color: #3C5129 !important;
+}
+
+.navbar-nav .nav-link.navbar-font {
+    position: relative;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.navbar-font:hover {
+    color: #9d9d9d;
+}
+
+.navbar-nav .nav-link.navbar-font::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DD614A;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.navbar-font:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.height-map{
+  height: 400px;
+}

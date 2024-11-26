@@ -1,0 +1,216 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@font-face {
+    font-family: 'mogilteregular';
+    src: url("fonts/mogilte-webfont.woff2") format("woff2"),
+         url("fonts/mogilte-webfont.woff") format("woff"),
+         url("fonts/Mogilte.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: white !important;
+  border-color: black !important;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: -80px;
+}
+
+.jumbotron-heading {
+  font-weight: 700;
+  font-family: 'mogilteregular' !important;
+  color: black !important;
+}
+
+.jumbotron .container {
+  max-width: 60rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  flex-grow: 1;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.botoncito
+{
+  font-family: Courier New;
+  background-color: #F48668 !important;
+  border-color: #DD614A !important;
+}
+
+.botoncito2
+{
+  font-family: Courier New;
+  background-color: #C5C392 !important;
+  border-color: #8CB369 !important;
+}
+
+.bg-navbar{
+  background-color: #C0BE87;
+}
+
+header {
+  flex-grow: 1;
+}
+
+.bg-header {
+  background-color: #C5C392;
+}
+
+.bg-footer{
+  font-family: Courier New;
+  font-size: 12px;
+  background-color: #DDB595 !important;
+  color: #F1FFE7;;
+}
+
+.link-color{
+  color: #DD614A;;
+}
+
+.font-spacing{
+  letter-spacing: -2.5px;
+  font-family: Courier New, sans-serif !important; 
+
+}
+
+.font-text{
+  font-family: Courier New, sans-serif !important; 
+  font-size: 12px;
+}
+
+.mogilte{
+  font-family: 'mogilteregular' !important; 
+}
+
+.navbar-font{
+  font-family: mogilteregular, sans-serif !important; 
+  font-size: 16px;
+  color: #3C5129 !important;
+}
+
+.navbar-nav .nav-link.navbar-font {
+    position: relative;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.navbar-font:hover {
+    color: #9d9d9d;
+}
+
+.navbar-nav .nav-link.navbar-font::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DD614A;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.navbar-font:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Style for the form inputs */
+.md-form input[type="text"],
+.md-form textarea {
+    border: none;
+    border-bottom: 1px solid #bdbdbd; /* Add a bottom border */
+    box-shadow: none; /* Remove any existing box shadow */
+}
+
+/* Style for the labels */
+.md-form label {
+    color: #757575; /* Change label color */
+}
+
+/* Style for the Send button */
+.btn-primary {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Add a bottom border */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove any existing box shadow */
+    color: #007bff; /* Change button text color */
+    font-weight: bold; /* Make button text bold */
+    transition: border-bottom 0.3s ease; /* Add transition effect to bottom border */
+}
+
+.btn-primary:hover {
+    border-bottom-color: #0056b3; /* Change bottom border color on hover */
+}
+
+/* Style for the contact information section */
+.text-center.text-md-left ul li {
+    list-style: none; /* Remove default list styles */
+    margin-bottom: 1.5rem; /* Add some spacing between items */
+    position: relative; /* Position the icon relative to the text */
+}
+
+.text-center.text-md-left ul li i {
+    color: #007bff; /* Change icon color */
+    position: absolute; /* Position the icon */
+    left: -30px; /* Adjust the distance of the icon from the text */
+    top: 0;
+}
+
+.text-center.text-md-left ul li p {
+    margin-left: 20px; /* Add some spacing between icon and text */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex-grow: 8;
+}
+
+body {
+  height: 100vh;
+}
+
+.resources {
+  color: gray;
+  font-size: 25px !important;
+}
